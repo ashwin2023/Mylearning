@@ -1,0 +1,26 @@
+22-8-2022.
+1)Write a Korn shell script to print "Welcome to LP Lab" for Five Times using for .. in loop.
+2)Write a Korn shell script to print file names in /tmp directory using for .. in loop.
+#!/bin/ksh
+for f in $(ls /tmp/*)
+do
+        print "Full file path  in /tmp dir : $f"
+done
+3)Write a Korn shell script to add Natural Numbers between 1 & 5 using for .. in loop.
+   for i in 1 2 3 4 5
+ do
+ sum=`expr $sum + $i`
+ done
+ echo $sum
+4)Write a Korn shell script to print the value of ‘a’ five times, from 1 to 5.
+  a=1
+ while [ $a -le 5 ]
+ do
+ echo “value of a=” $a
+ a=`expr $a + 1`
+ done
+5)Write a Korn shell script to create a "select" loop.
+6)Write a Korn shell script for Change Positional Parameters concept.
+7)Develop Korn shell scripts for a)Fixed Number of Arguments Validation
+		b)Minimum Number of Arguments Validation.
+8)Grep Command with various options.
